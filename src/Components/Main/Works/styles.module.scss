@@ -1,0 +1,23 @@
+@use '../../../styles/colors';
+.worksContainer{
+    height: 100vh;
+}
+
+.wrap{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.mainTitle{
+    margin-top: 1rem;
+
+    hr{
+        margin-top: 0.5rem;
+    }
+}
+
+.works{
+    margin-top: 2rem;
+}
+
