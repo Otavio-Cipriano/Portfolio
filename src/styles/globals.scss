@@ -1,0 +1,56 @@
+@use  'variables';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: variables.$darker-gray;
+  color: variables.$main-font;
+  z-index: -999;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a{
+  &:hover{
+    color: lighten(variables.$main-font, 20%) !important;
+  }
+}
+
+button{
+  padding: 13px 10px;
+  background: none;
+  color: variables.$main-font;
+  font-weight: 600;
+  border: 3px solid variables.$main-font;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+    &::after{
+      opacity: 8%;
+    }
+  }
+
+  &::after{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: variables.$main-font;
+    opacity: 0;
+  }
+}
