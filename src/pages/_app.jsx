@@ -1,13 +1,13 @@
 import '../styles/globals.scss'
 
-// import Layout from '../components/Layout/Layout'
+import Layout from '../Components/Layout/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Layout> */}
+      <Layout>
         <Component {...pageProps} />
-      {/* </Layout> */}
+      </Layout>
     </>
   )
 }
