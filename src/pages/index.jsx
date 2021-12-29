@@ -1,9 +1,8 @@
 import Head from 'next/head'
 
-// import Header from '../components/Header/Header'
-// import About from '../components/About/About'
-// import Works from '../components/Works/Works'
-// import Sidebar from '../components/Sidebar/Sidebar'
+import Header from '../Components/Header'
+import About from '../Components/About'
+import Sidebar from '../Components/Sidebar'
 
 export default function Home() {
   return (
@@ -12,10 +11,10 @@ export default function Home() {
         <title>Otávio Cipriano | Portfolio</title>
         <meta name="description" content="Otavio Cipriano's Portfolio" />
       </Head>
-      {/* <Header />
-      <Works/>
+      <Header />
+      {/* <Works/> */}
       <About/>
-      <Sidebar/> */}
+      <Sidebar/>
     </div>
   )
 }
