@@ -17,13 +17,13 @@ export default function Navbar() {
     return (
         <div className={`${style.navbar} ${background ? style.black : ''}`}>
             <div className={style.wrapper}>
-                <div className={style.logoContainer}><h1>OC</h1></div>
+                <div className={style.logoContainer}><a><h1>OC</h1></a></div>
                 <div className={style.navLinks}>
                     <div className={style.navLink}>
-                        <Link href="/About">About me</Link>
+                        <Link href="/Works">Works</Link>
                     </div>
                     <div className={style.navLink}>
-                        <Link href="/Works">Works</Link>
+                        <Link href="/About">About me</Link>
                     </div>
                     <div className={style.navLink}>
                         <Link href="/Contact">Contact</Link>

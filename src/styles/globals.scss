@@ -23,6 +23,7 @@ a {
 
 a{
   &:hover{
+    cursor: pointer;
     color: lighten(variables.$main-font, 20%) !important;
   }
 }
