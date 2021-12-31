@@ -16,7 +16,8 @@ export default function Header() {
                 </p>
                 <button>Get in Touch</button>
             </div>
-            <div className={style.blacknail}></div>
+            <div className={style.blacknail}>
+            </div>
         </div>
     )
 }

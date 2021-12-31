@@ -1,12 +1,9 @@
-import React from 'react'
-import TitleSection from '../TitleSection/TitleSection'
+import style from './About.module.scss'
 
 export default function About() {
     return (
-        <div>
-            {/* <TitleSection>
-                If you are you curious about who am I... 
-            </TitleSection> */}
+        <div className={style.container}>
+            <h2>If youre curious about me</h2>
         </div>
     )
 }
