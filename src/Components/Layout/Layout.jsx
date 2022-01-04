@@ -10,6 +10,9 @@ export default function Layout({ children }) {
             <Container>
                 {children}
             </Container>
+            <footer>
+                Copyright © 2022 - Otávio Cipriano
+            </footer>
         </div>
     )
 }

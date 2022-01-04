@@ -18,9 +18,20 @@ export default function WorksCard() {
                     Veniam sunt elit fugiat aute aliqua minim laboris 
                     elit nisi ipsum.
                 </p>
-                <div>
+                <div className={style.linksContainer}>
                     <Link href="https://github.com/" passHref={true}>
-                        <a>demo</a>
+                        <a>
+                            <div className={style.icon}>
+                                <img src="/icons/github.svg" alt="icon for github link" />
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href="https://github.com/" passHref={true}>
+                        <a>
+                            <div className={style.icon} >
+                                <img src="/icons/outside-link.svg" alt="icon for live version link" />
+                            </div>
+                        </a>
                     </Link>
                 </div>
             </div>
