@@ -1,0 +1,13 @@
+@use '../../styles/variables.scss';
+
+.layout{
+
+    footer{
+        min-height: 100px;
+        background-color: variables.$almost-black;
+        // padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

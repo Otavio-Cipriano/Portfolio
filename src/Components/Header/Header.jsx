@@ -7,7 +7,7 @@ export default function Header() {
                 <h2>
                     Hello
                     <br /> 
-                    Im Otavio Cipriano <br/>
+                    I{"\'"}m Otavio Cipriano<br/>
                     A Web Developer
                 </h2>
                 <p>
