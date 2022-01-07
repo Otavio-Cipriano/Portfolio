@@ -14,9 +14,10 @@ export default function About() {
                         A Full Stack Web Developer Based in Brazil
                     </h4>
                     <p>
-                        Im a web developer that builds websites and comercial grade aplications for web
+                        I{"\'"}m a web developer that builds websites and comercial grade aplications for web
                         using the latest technological trends. Currentrly living in São Paulo, Brazil
                     </p>
+                    <h3>Wants Contact me ?</h3>
                 </div>
             </div>
         </div>
