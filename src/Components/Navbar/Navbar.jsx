@@ -1,7 +1,10 @@
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
-import Container from '../Container/Container'
+import IconContainer from '../IconContainer/IconContainer'
+
 import Link from '../Link/Link'
 import style from './Navbar.module.scss'
+
 
 export default function Navbar() {
     const [background, setBackground] = useState(false)
@@ -28,9 +31,12 @@ export default function Navbar() {
                     <div className={style.navLink}>
                         <Link href="/Contact">Contact</Link>
                     </div>
-                    <div>
+                    <div >
                         <button>Resume</button>
                     </div>
+                </div>
+                <div className={style.menuBtn}>
+                        <IconContainer icon={faTimes}/>
                 </div>
             </div>
         </div>

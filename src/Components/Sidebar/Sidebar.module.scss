@@ -1,23 +1,14 @@
 .container{
-    position: fixed;
-    bottom: 10%;
+    position: absolute;
+    bottom: 5rem;
     z-index: 999;
-    left: 2.5rem;
+    right: -0;
     // background-color: white;
     // height: 100%;
 }
 
 .icon{
-    max-width: 45px;
+    max-width: 50px;
     margin: 1rem 0;
-    opacity: 50%;
-
-    img{
-        width: 120%;
-    }
-
-    &:hover{
-        cursor: pointer;
-        opacity: 80%;
-    }
+    font-size: 3.5rem;
 }
