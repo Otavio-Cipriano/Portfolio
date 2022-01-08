@@ -1,33 +1,12 @@
+import style from './TitleSection.module.scss';
+
 export default function TitleSection({ children }) {
     return (
-        <div style={container}>
-            <h2 style={title}>
+        <div className={style.container}>
+            <h2 style={style.title}>
                 {children}
             </h2>
-            <div style={dash}></div>
+            <div className={style.dash}><div/></div>
         </div>
     )
-}
-
-
-const container = {
-    position: 'relative',
-    margin: '5rem 0',
-}
-
-const title = {
-    fontSize: '2.5rem',
-    textAlign: 'center',
-    margin: '10px 0',
-}
-
-const dash = {
-    position: 'absolute',
-    width: '150px',
-    height: '10px',
-    backgroundColor: 'white',
-    bottom: '-1rem',
-    left: '45%',
-    opacity: '70%',
-    borderRadius: '2px'
 }

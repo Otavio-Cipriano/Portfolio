@@ -2,6 +2,10 @@ import style from './Layout.module.scss'
 
 import Container from "../Container/Container";
 import Navbar from "../Navbar/Navbar";
+import IconContainer from '../IconContainer/IconContainer';
+import Link from '../Link/Link'
+
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Layout({ children }) {
     return (
@@ -11,7 +15,13 @@ export default function Layout({ children }) {
                 {children}
             </Container>
             <footer>
-                Copyright © 2022 - Otávio Cipriano
+                <p style={{ margin: '5px 0 0 0' }}>Contact</p>
+                <div>
+                    <a href="https://www.twitter.com/" target="_blank"><IconContainer icon={faGithub} /></a>
+                    <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/" target="_blank"><IconContainer icon={faLinkedin} /></a>
+                    <a href="https://github.com/Otavio-Cipriano" target="_blank"><IconContainer icon={faTwitter} /></a>
+                </div>
+                <p style={{ margin: '10px 0' }}>Copyright © 2022 - Otávio Cipriano</p>
             </footer>
         </div>
     )

@@ -4,6 +4,8 @@ import Header from '../Components/Header/Header'
 import About from '../Components/About/About'
 import Works from '../Components/Works/Works'
 
+import Technologies from '../Components/Technologies/Technologies'
+
 export default function Home() {
   return (
     <div>

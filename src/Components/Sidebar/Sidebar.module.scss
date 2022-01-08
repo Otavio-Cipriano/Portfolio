@@ -1,7 +1,7 @@
 .container{
     position: absolute;
     bottom: 5rem;
-    z-index: 999;
+    z-index: 2;
     right: -0;
     // background-color: white;
     // height: 100%;
@@ -11,4 +11,20 @@
     max-width: 50px;
     margin: 1rem 0;
     font-size: 3.5rem;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        display: flex;
+        bottom: 1rem;
+    }
+    .icon{
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        display: none;
+    }
 }
