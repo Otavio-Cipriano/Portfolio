@@ -1,0 +1,25 @@
+@use "../../styles/variables.scss";
+
+.container {
+  margin: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.dash {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  > div {
+    height: 4px;
+    width: 100%;
+    max-width: 130px;
+    background-color: rgba(variables.$main-font, 0.95);
+  }
+}

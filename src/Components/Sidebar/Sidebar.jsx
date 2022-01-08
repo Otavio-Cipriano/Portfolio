@@ -9,25 +9,19 @@ export default function Sidebar() {
     return (
         <div className={style.container}>
             <div className={style.icon}>
-                <Link href="https://github.com/Otavio-Cipriano" passHref={true}>
-                    <a>
-                        <IconContainer icon={faGithub}/>
-                    </a>
-                </Link>
+                <a href="https://github.com/Otavio-Cipriano" target="_blank">
+                    <IconContainer icon={faGithub} />
+                </a>
             </div>
             <div className={style.icon}>
-                <Link href="https://www.linkedin.com/in/otavio-felipe-cipriano/" passHref={true}>
-                    <a>
-                        <IconContainer icon={faLinkedin}/>
-                    </a>
-                </Link>
+                <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/" target="_blank">
+                    <IconContainer icon={faLinkedin} />
+                </a>
             </div>
             <div className={style.icon}>
-                <Link href="https://www.twitter.com/" passHref={true}>
-                    <a>
-                        <IconContainer icon={faTwitter}/>
-                    </a>
-                </Link>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <IconContainer icon={faTwitter} />
+                </a>
             </div>
         </div >
     )
