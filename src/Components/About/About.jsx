@@ -7,9 +7,9 @@ import TitleSection from '../TitleSection/TitleSection'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Technologies from '../Technologies/Technologies'
 
-export default function About() {
+export default function About({...props}) {
     return (
-        <div className={style.container}>
+        <div className={style.container} {...props}>
             <TitleSection>If you{"\'"}re curious about me</TitleSection>
             <div className={style.divisor}>
                 <div className={style.imageContainer}>

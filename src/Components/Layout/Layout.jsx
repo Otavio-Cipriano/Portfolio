@@ -15,7 +15,7 @@ export default function Layout({ children }) {
                 {children}
             </Container>
             <footer>
-                <p style={{ margin: '5px 0 0 0' }}>Contact</p>
+                <p style={{ margin: '5px 0 0 0' }}>Contacts:</p>
                 <div>
                     <a href="https://www.twitter.com/" target="_blank"><IconContainer icon={faGithub} /></a>
                     <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/" target="_blank"><IconContainer icon={faLinkedin} /></a>

@@ -10,9 +10,9 @@ const Projects = [
     }
 ]
 
-export default function Works() {
+export default function Works({...props}) {
     return (
-        <div className={style.container}>
+        <div className={style.container} {...props}>
             <TitleSection>A few things I{"\'"}ve Built...</TitleSection>
             <div className={style.grid}>
                 <WorksCard/>

@@ -2,9 +2,9 @@ import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
 import IconContainer from '../IconContainer/IconContainer'
 
-import Link from '../Link/Link'
 import style from './Navbar.module.scss'
 
+import { Link } from 'react-scroll'
 
 export default function Navbar() {
     const [background, setBackground] = useState(false)
@@ -24,10 +24,10 @@ export default function Navbar() {
                 <div className={style.logoContainer}><a><h1>OC</h1></a></div>
                 <div className={`${style.navLinks} ${!menu ? style.hide : style.show}`} >
                     <div className={style.navLink}>
-                        <Link href="/Works">Works</Link>
+                        <Link to="works" smooth>Works</Link>
                     </div>
                     <div className={style.navLink}>
-                        <Link href="/About">About me</Link>
+                        <Link to="aboutme" smooth>About me</Link>
                     </div>
                     <div className={style.navLink}>
                         <Link href="/Contact">Contact</Link>
