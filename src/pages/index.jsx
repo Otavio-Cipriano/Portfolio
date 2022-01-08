@@ -4,8 +4,6 @@ import Header from '../Components/Header/Header'
 import About from '../Components/About/About'
 import Works from '../Components/Works/Works'
 
-import Technologies from '../Components/Technologies/Technologies'
-
 export default function Home() {
   return (
     <div>
@@ -14,8 +12,8 @@ export default function Home() {
         <meta name="description" content="Otavio Cipriano's Portfolio" />
       </Head>
       <Header/>
-      <Works/>
-      <About/>
+      <Works id="works"/>
+      <About id='aboutme'/>
     </div>
   )
 }
