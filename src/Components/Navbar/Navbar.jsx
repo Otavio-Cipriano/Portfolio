@@ -30,7 +30,7 @@ export default function Navbar() {
                         <Link to="aboutme" smooth>About me</Link>
                     </div>
                     <div className={style.navLink}>
-                        <Link href="/Contact">Contact</Link>
+                        <a>Contact</a>
                     </div>
                     <div className={style.resumeBtn}>
                         <a href="../../data/something.pdf" download>
