@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import style from './WorksCard.module.scss'
 
+import IconContainer from '../IconContainer/IconContainer'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+
 export default function WorksCard() {
     return (
         <div className={style.container}>
@@ -9,28 +13,27 @@ export default function WorksCard() {
             </div>
             <div className={style.textContainer}>
                 <h2>Some Project</h2>
-                <div>
-                    <span>tag</span>
-                    <span>tag</span>
-                    <span>tag</span>
+                <div className={style.tagsContainer}>
+                    <span>JavaScript</span>
+                    <span>ReactJS</span>
+                    <span>NodeJs</span>
                 </div>
-                <p>Nostrud ullamco ut nostrud nisi cupidatat sunt. 
-                    Veniam sunt elit fugiat aute aliqua minim laboris 
+                <p>Nostrud ullamco ut nostrud nisi cupidatat sunt.
+                    Veniam sunt elit fugiat aute aliqua minim laboris
+                    Veniam sunt elit fugiat aute aliqua minim laboris
                     elit nisi ipsum.
                 </p>
                 <div className={style.linksContainer}>
                     <Link href="https://github.com/" passHref={true}>
                         <a>
-                            <div className={style.icon}>
-                                <img src="/icons/github.svg" alt="icon for github link" />
-                            </div>
+                            <p>Code</p>
+                            <IconContainer icon={faGithub} />
                         </a>
                     </Link>
                     <Link href="https://github.com/" passHref={true}>
                         <a>
-                            <div className={style.icon} >
-                                <img src="/icons/outside-link.svg" alt="icon for live version link" />
-                            </div>
+                            <p>Live</p>
+                            <IconContainer icon={faExternalLinkAlt} />
                         </a>
                     </Link>
                 </div>
