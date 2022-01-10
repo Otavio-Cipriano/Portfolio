@@ -1,5 +1,5 @@
 .container{
-    margin: 0 2rem;
+    margin: 10rem 2rem;
     min-height: 100vh;
 }
 
@@ -9,6 +9,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     >div{
         width: 50%;
@@ -43,5 +44,22 @@
 
     a:first-of-type{
         margin-left: 0; 
+    }
+}
+
+@media(max-width: 1000px){
+    .divisor{
+        flex-direction: column;
+        >div{
+            width: 100%;
+        }
+    }
+
+    .textContainer{
+        text-align: center;
+        font-size: 1.1rem;
+        h3{
+            font-size: 1.4rem;
+        }
     }
 }

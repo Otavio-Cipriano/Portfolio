@@ -6,6 +6,7 @@ import style from './Navbar.module.scss'
 
 import { Link } from 'react-scroll'
 
+
 export default function Navbar() {
     const [background, setBackground] = useState(false)
     const [menu, setMenu] = useState(false)
@@ -21,7 +22,7 @@ export default function Navbar() {
     return (
         <div className={`${style.navbar} ${background ? style.black : ''}`}>
             <div className={style.wrapper}>
-                <div className={style.logoContainer}><a><h1>OC</h1></a></div>
+                <div className={style.logoContainer}><Link to="header" smooth><h1>OC</h1></Link></div>
                 <div className={`${style.navLinks} ${!menu ? style.hide : style.show}`} >
                     <div className={style.navLink}>
                         <Link to="works" smooth>Works</Link>
@@ -30,7 +31,7 @@ export default function Navbar() {
                         <Link to="aboutme" smooth>About me</Link>
                     </div>
                     <div className={style.navLink}>
-                        <a>Contact</a>
+                        <Link to="contact" smooth>Contact</Link>
                     </div>
                     <div className={style.resumeBtn}>
                         <a href="../../data/something.pdf" download>

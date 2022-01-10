@@ -7,7 +7,7 @@ import { faDatabase, faSitemap } from '@fortawesome/free-solid-svg-icons'
 export default function Technologies() {
     return (
         <div className={style.container}>
-            <h2>some technologies i use</h2>
+            <h2>Some Technologies I Use</h2>
             <div className={style.row}>
                 <div>
                     <span><IconContainer icon={faReact}/></span>

@@ -2,10 +2,12 @@ import style from './Header.module.scss'
 
 import Sidebar from '../Sidebar/Sidebar'
 
+import { Link } from 'react-scroll'
 
-export default function Header() {
+
+export default function Header({...props}) {
     return (
-        <div className={style.container}>
+        <div className={style.container} {...props}>
             <div className={style.wrap}>
                 <div className={style.hero}>
                     <h2>
@@ -18,7 +20,9 @@ export default function Header() {
                         I build digital experiences for  Web Applications<br />
                         so that a user can see and interact with them directly.
                     </p>
-                    <button>Get in Touch</button>
+                    <Link to="contact" smooth>
+                        <button>Get in Touch</button>
+                    </Link>
                 </div>
                 <Sidebar />
             </div>
