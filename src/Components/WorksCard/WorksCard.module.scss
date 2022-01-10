@@ -3,6 +3,8 @@
 .container{
     position: relative;
     max-width: 550px;
+    max-height: 755px;
+    min-height: 755px;
     width: 100%;
     overflow: hidden;
     background-color: variables.$almost-black;
@@ -42,7 +44,7 @@
     transition: 0.5s linear;
 
     h2{
-        font-size: 1.5rem !important;
+        font-size: clamp(1.1rem, 8vw, 1.5rem) !important;
         margin: 1rem 0;
         padding: 0;
         font-weight: 600;
@@ -71,9 +73,12 @@
 }
 
 .tagsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     span{
         background-color: rgb(37 215 255 / 61%);
-        margin: 0 10px;
+        margin: 10px;
         padding: 3px 10px;
         border-radius: 5px;
         font-size: 1.1rem;
