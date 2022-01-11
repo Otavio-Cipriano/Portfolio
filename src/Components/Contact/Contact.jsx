@@ -10,15 +10,7 @@ export default function Contact({...props}) {
     const form = useRef();
 
     const sendEmail = () => {
-        emailJs
-        .sendForm('gmail', 'pfolio_template',form.current, 'user_7xfUprucPZmaTlOxYBZX0')
-        .then((result) =>{
-            console.log(result.status);
-            toast.success("Messge sent with success!", {theme: "dark"})
-        },(error) =>{
-            console.log(error)
-            toast.warn("Message couldn't be sent", {theme: "dark"})
-        })
+
     }
 
     const handleOnClick = (e) =>{
