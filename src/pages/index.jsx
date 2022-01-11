@@ -19,11 +19,3 @@ export default function Home({userID}) {
     </div>
   )
 }
-
-export async function getStaticProps(){
-  const userID = process.env.USER_ID
-
-  return{
-    props: {userID}
-  }
-}

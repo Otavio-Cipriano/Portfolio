@@ -11,7 +11,7 @@ export default function Contact({...props}) {
 
     const sendEmail = () => {
         emailJs
-        .sendForm('gmail', 'pfolio_template',form.current, 'user_7xfUprucPZmaTlOxYBZX0')
+        .sendForm('gmail', 'pfolio_template', form.current, 'user_7xfUprucPZmaTlOxYBZX0')
         .then((result) =>{
             console.log(result.status);
             toast.success("Messge sent with success!", {theme: "dark"})

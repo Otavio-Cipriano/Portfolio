@@ -9,13 +9,3 @@ export default function handler(req, res) {
 
   res.status(400).json('Fuck off')
 }
-
-const sendEmail = (form) => {
-  emailJs
-    .sendForm(process.env.CLIENT_ID, process.env.TEMPLATE_ID, form, process.env.USER_ID)
-    .then((result) => {
-      console.log(result.status);
-    }, (error) => {
-      console.log(error)
-    })
-}
