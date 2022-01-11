@@ -67,6 +67,7 @@
 @media (max-width: 1000px){
 
     .hero{
+        align-items: center;
 
         h2{
             font-size: clamp(2rem, 7vw, 4rem);

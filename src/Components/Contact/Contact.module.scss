@@ -34,7 +34,6 @@
         font-weight: 500;
         font-size: 13px;
         color: rgba($color: rgb(201, 4, 4), $alpha: 0.8);
-        display: none;
     }
 
     &__label{
@@ -63,7 +62,7 @@
         color: variables.$main-font;
         padding: 10px;
         border: none;
-
+        resize: none;
     }
 
     &__area::placeholder, &__field::placeholder{
@@ -80,10 +79,4 @@
 .field__error{
     background-color: rgba($color: rgb(201, 4, 4), $alpha: 0.1);
     border: 1px solid rgba($color: rgb(201, 4, 4), $alpha: 0.1);
-
-    & ~ {
-        span{
-            display: block !important;
-        }
-    }
 }
