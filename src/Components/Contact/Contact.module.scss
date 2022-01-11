@@ -62,6 +62,8 @@
         text-indent: 3px;
         color: variables.$main-font;
         padding: 10px;
+        border: none;
+
     }
 
     &__area::placeholder, &__field::placeholder{
