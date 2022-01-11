@@ -19,7 +19,6 @@ export default function Contact({ ...props }) {
         }
         else { 
             toast.error("Message couldn't be sent", { theme: "dark" })
-            console.log(invalidFields) 
         }
     }
 

@@ -10,15 +10,15 @@ export default function Header({...props}) {
         <div className={style.container} {...props}>
             <div className={style.wrap}>
                 <div className={style.hero}>
-                    <h2>
+                    <h1>
                         Hello
                         <br />
                         I{"\'"}m Otavio Cipriano<br />
                         A Web Developer
-                    </h2>
+                    </h1>
                     <p>
-                        I build digital experiences for  Web Applications<br />
-                        so that a user can see and interact with them directly.
+                    I build modern digital experiences for Web Applications,
+                    So that a user can view and interact in the most comfortable way possible
                     </p>
                     <Link to="contact" smooth>
                         <button>Get in Touch</button>

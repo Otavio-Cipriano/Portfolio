@@ -17,9 +17,9 @@ export default function Layout({ children }) {
             <footer>
                 <p style={{ margin: '5px 0 0 0' }}>Contacts:</p>
                 <div>
-                    <a href="https://twitter.com/OtavioDv" target="_blank"><IconContainer icon={faGithub} /></a>
+                    <a href="https://github.com/Otavio-Cipriano"  target="_blank"><IconContainer icon={faGithub} /></a>
                     <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/" target="_blank"><IconContainer icon={faLinkedin} /></a>
-                    <a href="https://github.com/Otavio-Cipriano" target="_blank"><IconContainer icon={faTwitter} /></a>
+                    <a href="https://twitter.com/OtavioDv" target="_blank"><IconContainer icon={faTwitter} /></a>
                 </div>
                 <p style={{ margin: '10px 0' }}>Copyright © 2022 - Otávio Cipriano</p>
             </footer>

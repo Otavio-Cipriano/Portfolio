@@ -17,13 +17,17 @@ export default function About({...props}) {
                 </div>
                 <div className={style.textContainer}>
                     <h3>Who am I ?</h3>
-                    <p>{"I\'m Otávio Cipriano"} <br />
-                        A Full Stack Web Developer Based in Brazil
+                    <p>{"I\'m Otávio Cipriano "} 
+                        a Full Stack Web Developer Based in Brazil
                         <br />
                         <br />
                         I build modern websites and comercial grade <br /> 
                         aplications for web
                         using the latest technological trends. 
+                        <br/>
+                        <br/>
+                        I started to enjoy coding around 2019 and since then I am studying 
+                        and developing applications for web.
                         <br/>
                         <br/>
                         Currently living in São Paulo, Brazil
