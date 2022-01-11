@@ -11,7 +11,7 @@ export default function Contact({...props}) {
 
     const sendEmail = () => {
         emailJs
-        .sendForm('gmail', 'pfolio_template',form.current)
+        .sendForm('gmail', 'pfolio_template',form.current, 'user_7xfUprucPZmaTlOxYBZX0')
         .then((result) =>{
             console.log(result.status);
             toast.success("Messge sent with success!", {theme: "dark"})
@@ -28,7 +28,7 @@ export default function Contact({...props}) {
         // if(!validateForm){
         //     toast.warn("Message couldn't be sent", {theme: "dark"})
         // }
-        console.log(validateForm(form.current), form.current['name'].classList)
+        console.log(monkey)
     }
 
     const validateForm = (form) =>{
@@ -94,5 +94,6 @@ export default function Contact({...props}) {
         </div>
     )
 }
+
 
 

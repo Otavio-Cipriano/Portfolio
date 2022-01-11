@@ -5,7 +5,7 @@ import About from '../Components/About/About'
 import Works from '../Components/Works/Works'
 import Contact from '../Components/Contact/Contact'
 
-export default function Home() {
+export default function Home({userID}) {
   return (
     <div>
       <Head>
@@ -18,4 +18,12 @@ export default function Home() {
       <Contact id='contact'/>
     </div>
   )
+}
+
+export async function getStaticProps(){
+  const userID = process.env.USER_ID
+
+  return{
+    props: {userID}
+  }
 }
