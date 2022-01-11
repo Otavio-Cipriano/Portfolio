@@ -19,7 +19,7 @@ export default function Sidebar() {
                 </a>
             </div>
             <div className={style.icon}>
-                <a href="https://www.twitter.com/" target="_blank">
+                <a href="https://twitter.com/OtavioDv" target="_blank">
                     <IconContainer icon={faTwitter} />
                 </a>
             </div>
