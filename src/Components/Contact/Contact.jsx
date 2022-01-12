@@ -1,4 +1,3 @@
-import emailJs from '@emailjs/browser'
 import { useRef, useState } from 'react'
 import TitleSection from '../TitleSection/TitleSection'
 import style from './Contact.module.scss'
@@ -14,7 +13,9 @@ export default function Contact({ ...props }) {
     const handleOnClick = (e) => {
         e.preventDefault()
         if (validateForm(form.current)) { 
-            sendEmail(); 
+            sendEmail(form.current.name.value, 
+                form.current.email.value,
+                 form.current.message.value); 
             e.target.reset()
         }
         else { 
@@ -44,17 +45,22 @@ export default function Contact({ ...props }) {
     }
 
     
-    const sendEmail = () => {  
-        
-        emailJs
-            .sendForm('gmail', 'pfolio_template', form.current, 'user_7xfUprucPZmaTlOxYBZX0')
-            .then((result) => {
-                console.log(result.status);
-                toast.success("Messge sent with success!", { theme: "dark" })
-            }, (error) => {
-                console.log(error)
-                toast.error("Message couldn't be sent", { theme: "dark" })
+    const sendEmail = (name, email, message) => {
+        fetch('/api/contact',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
             })
+        }).then((response)=>{
+            toast.success("Message sent with success", { theme: "dark" })
+        }).catch((error)=>{
+            toast.error("Message couldn't be sent", { theme: "dark" })
+        })
     }
 
     const onInput = (e) => {
