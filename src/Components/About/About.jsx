@@ -1,13 +1,12 @@
 import style from './About.module.scss'
 
-import Link from '../Link/Link'
 import IconContainer from '../IconContainer/IconContainer'
 import TitleSection from '../TitleSection/TitleSection'
 
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Technologies from '../Technologies/Technologies'
 
-import Information from '../../misc/information'
+import Information from '../../misc/Information'
 
 export default function About({...props}) {
     return (
