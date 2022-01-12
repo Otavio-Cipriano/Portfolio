@@ -7,13 +7,15 @@ import TitleSection from '../TitleSection/TitleSection'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Technologies from '../Technologies/Technologies'
 
+import Information from '../../misc/information'
+
 export default function About({...props}) {
     return (
         <div className={style.container} {...props}>
             <TitleSection>If you{"\'"}re curious about me</TitleSection>
             <div className={style.divisor}>
                 <div className={style.imageContainer}>
-                    <object data="/images/information.svg" type=""></object>
+                    <Information/>
                 </div>
                 <div className={style.textContainer}>
                     <h3>Who am I ?</h3>
@@ -34,9 +36,9 @@ export default function About({...props}) {
                     </p>
                     <h3>Want to Contact me ?</h3>
                     <div className={style.contactLinks}>
-                    <a href="https://github.com/Otavio-Cipriano"  target="_blank"><IconContainer icon={faGithub}/></a>
-                    <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/"  target="_blank"><IconContainer icon={faLinkedin}/></a>
-                    <a href="https://twitter.com/OtavioDv"  target="_blank"><IconContainer icon={faTwitter}/></a>
+                    <a href="https://github.com/Otavio-Cipriano"  target="_blank" rel="noreferrer"><IconContainer icon={faGithub}/></a>
+                    <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/"  target="_blank" rel="noreferrer"><IconContainer icon={faLinkedin}/></a>
+                    <a href="https://twitter.com/OtavioDv"  target="_blank" rel="noreferrer"><IconContainer icon={faTwitter}/></a>
                     </div>
                 </div>
             </div>

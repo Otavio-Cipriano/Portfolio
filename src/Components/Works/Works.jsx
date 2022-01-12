@@ -27,7 +27,7 @@ export default function Works({...props}) {
             <div className={style.grid}>
                 {Projects.length > 0 ?
                     Projects.map((project, index)=>{
-                        return(<WorksCard work={project}/>)
+                        return(<WorksCard key={index} work={project}/>)
                     })
                     : <em>Nothig here yet</em>
                 }
@@ -35,6 +35,3 @@ export default function Works({...props}) {
         </div>
     )
 }
-
-
-'https://picsum.photos/200/300'

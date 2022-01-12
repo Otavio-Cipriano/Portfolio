@@ -48,9 +48,10 @@ export default function Contact({ ...props }) {
     const sendEmail = (name, email, message) => {
         fetch('/api/contact',{
             method: 'POST',
-            headers: {
+            mode: 'same-origin',
+            headers: new Headers({
                 'Content-Type': 'application/json'
-            },
+            }),
             body: JSON.stringify({
                 name: name,
                 email: email,
