@@ -44,7 +44,8 @@ export default function Contact({ ...props }) {
     }
 
     
-    const sendEmail = () => {
+    const sendEmail = () => {  
+        
         emailJs
             .sendForm('gmail', 'pfolio_template', form.current, 'user_7xfUprucPZmaTlOxYBZX0')
             .then((result) => {
