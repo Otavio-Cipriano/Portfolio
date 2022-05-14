@@ -6,7 +6,7 @@
     top: 0;
     padding: 0 2.5rem;
     z-index: 999;
-
+    animation: visible 0.5s ease-in;
 }
 
 .wrapper{
@@ -138,4 +138,16 @@
     }
 
     .logoContainer{width: 100%;}
+}
+
+
+@keyframes visible {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
