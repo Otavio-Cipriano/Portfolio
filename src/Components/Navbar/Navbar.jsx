@@ -1,9 +1,6 @@
 import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
 import IconContainer from '../IconContainer/IconContainer'
-
-import style from './Navbar.module.scss'
-
 import { Link } from 'react-scroll'
 
 
@@ -20,31 +17,31 @@ export default function Navbar() {
         })
     }, [])
     return (
-        <div className={`${style.navbar} ${background ? style.black : ''}`}>
-            <div className={style.wrapper}>
-                <div className={style.logoContainer}><Link to="header" smooth><h1>OC</h1></Link></div>
-                <div className={`${style.navLinks} ${!menu ? style.hide : style.show}`} >
-                    <div className={style.navLink}>
+        <nav className={`nav ${background ? 'nav__black' : ''}`}>
+            <div className='nav__wrap'>
+                <div className='nav__logo'><Link to="header" smooth><h1>OC</h1></Link></div>
+                <ul className={`nav__links ${!menu ? 'nav__hide' : 'nav__show'}`} >
+                    <li className='nav__link'>
                         <Link to="works" smooth>Works</Link>
-                    </div>
-                    <div className={style.navLink}>
+                    </li>
+                    <li className='nav__link'>
                         <Link to="aboutme" smooth>About me</Link>
-                    </div>
-                    <div className={style.navLink}>
+                    </li>
+                    <li className='nav__link'>
                         <Link to="contact" smooth>Contact</Link>
-                    </div>
-                    <div className={style.resumeBtn}>
+                    </li>
+                    <li>
                         <a href="../../data/something.pdf" download>
                             <button>Resume</button>
                         </a>
-                    </div>
-                </div>
-                <div className={style.menuBtn} onClick={() => setMenu(!menu)}>
+                    </li>
+                </ul>
+                <div className='nav__btn' onClick={() => setMenu(!menu)}>
                     {menu ?
                         <IconContainer icon={faTimes} /> :
                         <IconContainer icon={faBars} />}
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
