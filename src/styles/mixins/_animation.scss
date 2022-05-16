@@ -1,0 +1,27 @@
+@mixin animation($name) {
+
+        animation: $name 0.6s ease-out;
+
+}
+
+@keyframes fadeInLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

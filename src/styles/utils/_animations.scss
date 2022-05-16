@@ -1,0 +1,9 @@
+@use '../mixins/animation';
+
+.fadeInLeft{
+    @include animation.animation(fadeInLeft);
+}
+
+.fadeInRight{
+    @include animation.animation(fadeInRight);
+}
