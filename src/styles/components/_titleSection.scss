@@ -11,7 +11,7 @@
     margin: 0;
     font-size: clamp(1.5rem, 6vw, 2.4rem);
   }
-  .title-section__dash {
+  &__dash {
     position: absolute;
     width: 10%;
     height: 5px;

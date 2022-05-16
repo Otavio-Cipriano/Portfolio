@@ -1,5 +1,3 @@
-import style from './TitleSection.module.scss';
-
 export default function TitleSection({ children, ...props }) {
     return (
         <div className='title-section' {...props}>
