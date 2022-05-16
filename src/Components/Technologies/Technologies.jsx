@@ -1,14 +1,12 @@
-import style from './Technologies.module.scss'
-
 import IconContainer from '../IconContainer/IconContainer'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase, faSitemap } from '@fortawesome/free-solid-svg-icons'
 
 export default function Technologies() {
     return (
-        <div className={style.container}>
+        <div className='techologies'>
             <h2>Some Technologies I Use</h2>
-            <div className={style.row}>
+            <div className='technologies__row'>
                 <div>
                     <span><IconContainer icon={faReact}/></span>
                     <h3>Front-End</h3>

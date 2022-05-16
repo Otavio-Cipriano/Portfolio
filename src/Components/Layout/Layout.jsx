@@ -1,5 +1,3 @@
-import style from './Layout.module.scss'
-
 import Container from "../Container/Container";
 import Navbar from "../Navbar/Navbar";
 import IconContainer from '../IconContainer/IconContainer';
@@ -9,7 +7,7 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 
 export default function Layout({ children }) {
     return (
-        <div className={style.layout}>
+        <div className='layout'>
             <Navbar />
             <Container>
                 {children}

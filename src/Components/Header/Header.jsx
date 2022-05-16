@@ -1,5 +1,3 @@
-import style from './Header.module.scss'
-
 import Sidebar from '../Sidebar/Sidebar'
 
 import { Link } from 'react-scroll'
@@ -7,9 +5,9 @@ import { Link } from 'react-scroll'
 
 export default function Header({...props}) {
     return (
-        <div className={style.container} {...props}>
-            <div className={style.wrap}>
-                <div className={style.hero}>
+        <div className='header' {...props}>
+            <div className='header__wrap'>
+                <div className='header__hero'>
                     <h1>
                         Hello
                         <br />
@@ -26,8 +24,7 @@ export default function Header({...props}) {
                 </div>
                 <Sidebar />
             </div>
-            <div className={style.blacknail}>
-            </div>
+            <div className='header__blacknail'/>
         </div>
     )
 }

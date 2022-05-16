@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import TitleSection from '../TitleSection/TitleSection'
-import style from './Contact.module.scss'
 import { ToastContainer, toast } from 'react-toastify';
 
 
@@ -26,7 +25,7 @@ export default function Contact({ ...props }) {
     const validateForm = (form) => {
         let validatedFields = fields.map((field, index) => {
             if (form[`${field}`].value < 1) {
-                form[`${field}`].classList.add(style.field__error)
+                form[`${field}`].classList.add('input__field-error')
                 return false
             }
             return true
@@ -73,12 +72,12 @@ export default function Contact({ ...props }) {
 
 
     return (
-        <div className={style.container} {...props}>
+        <div className='contact' {...props}>
             <TitleSection>How about leave a message</TitleSection>
-            <div className={style.formContainer}>
+            <div className='contact__form'>
                 <form onSubmit={handleOnClick} ref={form}>
-                    <div className={style.input}>
-                        <label className={style.input__label} >Name:</label>
+                    <div className='input'>
+                        <label className='input__label' >Name:</label>
                         <span 
                         style={invalidFields.includes('name') ? {display: 'block'} : {display: 'none'}}>
                             You need to enter a name
@@ -86,34 +85,34 @@ export default function Contact({ ...props }) {
                         <input
                             type="text"
                             name="name"
-                            className={style.input__field}
+                            className='input__field'
                             placeholder="Enter your Name"
                             minLength={2}
                             maxLength={100}
                             onInput={onInput}/>
                     </div>
-                    <div className={style.input}>
-                        <label className={style.input__label}>Email:</label>
+                    <div className='input'>
+                        <label className='input__label'>Email:</label>
                         <span 
                         style={invalidFields.includes('email') ? {display: 'block'} : {display: 'none'}}>
                             You need to enter a email
                         </span>
                         <input
                             type="email" name="email"
-                            className={style.input__field}
+                            className='input__field'
                             placeholder="Enter your Name"
                             minLength={2}
                             maxLength={100}
                             onInput={onInput} />
                     </div>
-                    <div className={style.input}>
-                        <label className={style.input__label}>Message:</label>
+                    <div className='input'>
+                        <label className='input__label'>Message:</label>
                         <span 
                         style={invalidFields.includes('message') ? {display: 'block'} : {display: 'none'}}>
                             You need to enter a message
                         </span>
                         <textarea
-                            className={style.input__area}
+                            className='input__area'
                             name="message" cols="30" rows="10"
                             placeholder="Enter your message"
                             onInput={onInput}
@@ -122,7 +121,7 @@ export default function Contact({ ...props }) {
                     <button>Send Message</button>
                 </form>
             </div>
-            <ToastContainer className={style.toast} />
+            <ToastContainer className='contact__toast' />
         </div>
     )
 }
