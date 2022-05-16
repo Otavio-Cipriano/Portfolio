@@ -1,7 +1,7 @@
-import '../styles/globals.scss'
+import '../sass/main.scss'
 import 'react-toastify/dist/ReactToastify.css';
 
-import Layout from '../Components/Layout/Layout'
+import Layout from '../components/Layout/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
