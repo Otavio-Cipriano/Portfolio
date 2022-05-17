@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import Header from '../Components/Header/Header'
-import About from '../Components/About/About'
-import Works from '../Components/Works/Works'
-import Contact from '../Components/Contact/Contact'
+import Header from '../components/Header/Header'
+import About from '../components/About/About'
+import Works from '../components/Works/Works'
+import Contact from '../components/Contact/Contact'
 
 export default function Home({userID}) {
   return (
