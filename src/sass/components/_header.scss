@@ -76,13 +76,56 @@
       max-width: 750px;
     }
 
+    a{
+      display: contents;
+    }
+
     button {
       margin: 1.5rem 0;
       padding: 1rem 1.3rem;
       max-width: 250px;
       font-size: 1.4rem;
       width: 100%;
+      animation: pulse 10s infinite ease;
+
+      @keyframes pulse {
+        0%{
+            transform: scale(1.05);
+            box-shadow: 0 0 0 #d3d4d44f;;
+        }
+        100%{
+            transform: scale(1);
+            box-shadow: 0 0 12px #d3d4d44f;
+        }
+    }
     } 
+  }
+
+  &__scroll{
+    position: absolute;
+    bottom: 1rem;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    animation: upDown 1.4s infinite ease;
+
+    p{
+      margin: 0;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+
+    @keyframes upDown {
+      0%{
+          transform: translateY(10%);
+      }
+      100%{
+        transform: translateY(-10%);
+      }
+  }
   }
 
   @media (max-width: 850px) {
@@ -95,6 +138,10 @@
         font-size: 1.5rem;
         max-width: 600px;
       }
+    }
+
+    &__scroll{
+      display: none;
     }
   }
 
