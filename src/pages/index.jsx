@@ -15,7 +15,7 @@ export default function Home({userID}) {
       <Header id="header"/>
       <Works id="works"/>
       <About id='aboutme'/>
-      <Contact id='contact'/>
+      {/* <Contact id='contact'/> */}
     </div>
   )
 }

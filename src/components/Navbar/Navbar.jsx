@@ -27,9 +27,9 @@ export default function Navbar() {
                     <li className='nav__link'>
                         <Link to="aboutme" smooth>About me</Link>
                     </li>
-                    <li className='nav__link'>
+                    {/* <li className='nav__link'>
                         <Link to="contact" smooth>Contact</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="../../data/something.pdf" download>
                             <button>Resume</button>
