@@ -11,7 +11,7 @@ export default function Sidebar() {
                 </a>
             </div>
             <div className='sidebar__icon'>
-                <a href="https://www.linkedin.com/in/otavio-felipe-cipriano/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/otaviocipriano/" target="_blank" rel="noreferrer">
                     <IconContainer icon={faLinkedin} />
                 </a>
             </div>

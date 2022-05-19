@@ -24,12 +24,6 @@ export default function Header({ ...props }) {
                     </Link>
                 </div>
                 <Sidebar />
-                <div className="header__scroll">
-                    <Link to="works" smooth>
-                        <p>Scroll</p>
-                        <IconContainer icon={faArrowDown} />
-                    </Link>
-                </div>
             </div>
             <div className='header__blacknail' />
         </div>
