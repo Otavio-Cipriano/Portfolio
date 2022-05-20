@@ -35,7 +35,7 @@ export default function About({ ...props }) {
                             <p>
                             Currently living in São Paulo, Brazil
                         </p>
-                        <h3>Want to Contact or Give me a feedback ?</h3>
+                        <h3>Want to Contact me ?</h3>
                         <div className='about__links'>
                             <a href="https://github.com/Otavio-Cipriano" target="_blank" rel="noreferrer"><IconContainer icon={faGithub} /></a>
                             <a href="https://www.linkedin.com/in/otaviocipriano/" target="_blank" rel="noreferrer"><IconContainer icon={faLinkedin} /></a>
