@@ -10,20 +10,23 @@ export default function Technologies() {
                 <div>
                     <span><IconContainer icon={faReact}/></span>
                     <h3>Front-End</h3>
-                    <p>Experience with like ReactJs and NextJs </p>
+                    <p>Experience with HTML, CSS, Sass, Styled-Components
+                        Javascript, ReactJs, and Nextjs</p>
                 </div>
                 <div>
                     <span><IconContainer icon={faDatabase}/></span>
                     <h3>Back-End</h3>
                     <p>
-                        Experience with NodeJs and Databases
+                        Experience with NodeJs and Databases as 
+                        Oracle, SQLServer and MongoDB
                     </p>
                 </div>
                 <div>
                     <span><IconContainer icon={faSitemap}/></span>
                     <h3>UI/UX</h3>
                     <p>
-                        Experience with tools like Figma
+                        Experience with tools like Figma 
+                        and Photoshop
                     </p>
                 </div>
             </div>

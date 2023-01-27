@@ -127,11 +127,19 @@
       flex-direction: column;
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.9);
+      gap: 2rem;
     }
 
     &__link {
-      height: 60px;
+      // height: 60px;
+      // padding: 1rem 0;
       font-size: clamp(1.5rem, 5.5vw, 2rem);
+
+      &:hover{
+        &::after{
+          content: none;
+        }
+      }
     }
 
     &__btn {

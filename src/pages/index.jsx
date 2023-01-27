@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import About from '../components/About/About'
 import Works from '../components/Works/Works'
-import Contact from '../components/Contact/Contact'
 
 export default function Home({userID}) {
   return (
@@ -15,7 +14,6 @@ export default function Home({userID}) {
       <Header id="header"/>
       <Works id="works"/> 
       <About id='aboutme'/>
-      <Contact id='contact'/>
     </div>
   )
 }

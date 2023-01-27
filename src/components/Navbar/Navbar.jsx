@@ -18,20 +18,20 @@ export default function Navbar() {
     }, [])
     return (
         <nav className={`nav ${background ? 'nav__black' : ''}`}>
-            <div className='nav__wrap'>
-                <div className='nav__logo'><Link to="header" smooth><h1>OC</h1></Link></div>
+            <div className='nav__wrap container'>
+                <div className='nav__logo'><Link to="header" smooth><h1>{'OC'}</h1></Link></div>
                 <ul className={`nav__links ${!menu ? 'nav__hide' : 'nav__show'}`} >
                     <li className='nav__link'>
-                        <Link to="works" smooth>Works</Link>
+                        <Link to="works" smooth onClick={() => setMenu(false)}>Works</Link>
                     </li>
                     <li className='nav__link'>
-                        <Link to="aboutme" smooth>About me</Link>
+                        <Link to="aboutme" smooth onClick={() => setMenu(false)}>About me</Link>
                     </li>
-                    <li className='nav__link'>
+                    {/* <li className='nav__link'>
                         <Link to="contact" smooth>Contact</Link>
-                    </li>
-                    <li>
-                        <a href="../../data/something.pdf" download>
+                    </li> */}
+                    <li onClick={() => setMenu(false)}>
+                        <a href="/resume/resume.pdf" download>
                             <button>Resume</button>
                         </a>
                     </li>
